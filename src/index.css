@@ -1,0 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/microsoft-sans-serif');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,300,501,401&f[]=melodrama@300,400,600,700,1,500&f[]=work-sans@400,600,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
