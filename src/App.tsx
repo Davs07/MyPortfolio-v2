@@ -4,7 +4,6 @@ import Hero2 from "./components/Hero2";
 import Navbar from "./components/Navbar";
 import { Skills } from "./components/Skills";
 
-import Vite from "/next3d.png";
 
 function App() {
   return (
