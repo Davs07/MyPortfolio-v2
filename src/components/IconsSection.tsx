@@ -125,14 +125,14 @@ const skills: Skill[] = [
   },
 ];
 
-function FrontendIconsSection() {
+function IconsSection() {
   return (
     <div className=" max-w-[900px] rounded-3xl flex flex-wrap justify-center items-center gap-6 font-satoshi ">
       {skills.map((skill, id) => (
         <div className="w-24 h-20 flex items-center justify-center">
           <div
             key={id}
-            className="group border-2 relative max-size-24 border-black transition-all duration-100 size-16 hover:size-24 rounded-2xl p-2 flex flex-col items-center justify-center ">
+            className="group border-2 relative max-size-24 border-black transition-all duration-100 size-16 hover:size-24 rounded-xl p-2 flex flex-col items-center justify-center ">
             {skill.icon}
             <span className=" group-hover:flex text-xs  text-center hidden font-semibold">
               {skill.name}
@@ -144,4 +144,4 @@ function FrontendIconsSection() {
   );
 }
 
-export default FrontendIconsSection;
+export default IconsSection;

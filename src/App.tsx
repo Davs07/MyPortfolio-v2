@@ -1,9 +1,11 @@
+import Contact from "./components/Contact";
 import About from "./components/About";
+import Blog from "./components/Blog";
 import Hero from "./components/Hero";
 import Hero2 from "./components/Hero2";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import { Skills } from "./components/Skills";
-
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         <About />
         {/* SKILLS */}
         <Skills />
+        <Projects />
+        <Blog />
+        <Contact />
       </div>
     </div>
   );
