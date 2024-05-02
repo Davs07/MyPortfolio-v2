@@ -12,7 +12,7 @@ function Navbar() {
           <li>HOME</li>
           <li>ABOUT</li>
           <li>SKILLS</li>
-          <li>PORTFOLIO</li>
+          <li>PROJECTS</li>
           <li>BLOG</li>
           <li>CONTACT</li>
           <li>|</li>
