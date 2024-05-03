@@ -4,6 +4,7 @@ import { InstagramIcon } from "../assets/InstagramIcon";
 import { DIcon } from "../assets/DIcon";
 import { PiCircleHalfFill } from "react-icons/pi";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [theme, setTheme] = useState(() => {
@@ -36,12 +37,25 @@ function Navbar() {
       </div>
       <div className="flex ">
         <ul className="flex gap-6 items-center font-satoshi font-semibold ul-pointer  ">
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>SKILLS</li>
-          <li>PROJECTS</li>
-          <li>BLOG</li>
-          <li>CONTACT</li>|<li>EN</li>
+          <li>
+            <Link to={"/"}>HOME</Link>
+          </li>
+          <li>
+            <Link to={"/about"}>ABOUT</Link>
+          </li>
+          <li>
+            <Link to={"/skills"}>SKILLS</Link>
+          </li>
+          <li>
+            <Link to={"/projects"}>PROJECTS</Link>
+          </li>
+          <li>
+            <Link to={"/blog"}>BLOG</Link>
+          </li>
+          <li>
+            <Link to={"/contact"}>CONTACT</Link>
+          </li>
+          |<li>EN</li>
           <li>
             <PiCircleHalfFill
               fontSize={20}

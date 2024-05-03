@@ -1,13 +1,52 @@
-import Contact from "./components/ContactHome";
-import About from "./components/AboutHome";
-import Blog from "./components/BlogHome";
-import Hero from "./components/HeroHome";
-import Hero2 from "./components/Hero2Home";
+import { Route, Routes } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
 import Navbar from "./components/Navbar";
-import Projects from "./components/ProjectsHome";
-import { Skills } from "./components/SkillsHome";
+import HomePage from "./pages/HomePage";
+import BlogPage from "./pages/BlogPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ContactPage from "./pages/ContactPage";
+import SkillsPage from "./pages/SkillsPage";
+
+interface routes {
+  path: string;
+  element: JSX.Element;
+  name?: string;
+  children?: routes[];
+}
 
 function App() {
+  const routes: routes[] = [
+    {
+      path: "/",
+      element: <HomePage />,
+      name: "Home",
+    },
+    {
+      path: "/about",
+      element: <AboutPage />,
+      name: "About",
+    },
+    {
+      path: "/skills",
+      element: <SkillsPage />,
+      name: "Skills",
+    },
+    {
+      path: "/projects",
+      element: <ProjectsPage />,
+      name: "Projects",
+    },
+    {
+      path: "/blog",
+      element: <BlogPage />,
+      name: "Blog",
+    },
+    {
+      path: "/contact",
+      element: <ContactPage />,
+      name: "Contact",
+    },
+  ];
   return (
     <div className="max-w-screen w-full min-w-80 min-h-screen flex bg-m-superlight  justify-center bg-white dark:bg-black text-black dark:text-white  ">
       {/* NAVBAR */}
@@ -16,18 +55,12 @@ function App() {
           <Navbar />
         </div>
       </div>
-
       {/* CONTENT */}
-      <div className="w-full max-w-[1112px] min-h-full  flex flex-col  ">
-        <Hero />
-        <Hero2 />
-        <About />
-        {/* SKILLS */}
-        <Skills />
-        <Projects />
-        <Blog />
-        <Contact />
-      </div>
+      <Routes>
+        {routes.map((route) => (
+          <Route key={route.name} path={route.path} element={route.element} />
+        ))}
+      </Routes>
     </div>
   );
 }
