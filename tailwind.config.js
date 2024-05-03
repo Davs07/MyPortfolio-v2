@@ -11,8 +11,8 @@ export default {
         "work-sans": ["Work Sans", "sans-serif"],
       },
       colors: {
-        white: "var(--m-white)",
-        black: "var(--m-black)",
+        "white": "var(--m-light)",
+        "black": "var(--m-dark)",
       },
     },
   },

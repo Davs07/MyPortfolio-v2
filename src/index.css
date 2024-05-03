@@ -7,8 +7,8 @@
 
 :root {
 
-  --m-white: #f4f6ff;
-  --m-black: #020617;
+  --m-light: #f4f6ff;
+  --m-dark: #020617;
 }
 
 .ul-pointer li {

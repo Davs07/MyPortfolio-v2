@@ -31,7 +31,7 @@ function Navbar() {
   };
   return (
     <>
-      <div className="rounded-xl border-black border-2 p-1 group hover:bg-black ">
+      <div className="rounded-xl border-black dark:border-white border-2 p-1 group hover:bg-black ">
         <DIcon className="size-6 group-hover:text-white dark:text-white" />
       </div>
       <div className="flex ">
