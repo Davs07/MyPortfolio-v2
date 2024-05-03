@@ -9,9 +9,9 @@ import { Skills } from "./components/Skills";
 
 function App() {
   return (
-    <div className="max-w-screen w-full min-w-80 min-h-screen flex  justify-center  ">
+    <div className="max-w-screen w-full min-w-80 min-h-screen flex bg-white  justify-center dark:bg-black dark:text-white  ">
       {/* NAVBAR */}
-      <div className="h-14 fixed z-10 bg-white text-black w-full justify-center flex  ">
+      <div className="h-14 fixed z-10 bg-white dark:bg-black text-black dark:text-white w-full justify-center flex  ">
         <div className="h-full max-w-[1112px] p-2 w-full  flex  items-center font-satoshi  justify-between ">
           <Navbar />
         </div>

@@ -27,16 +27,16 @@ interface Skill {
 }
 
 interface IconProps {
-  fontSize: number;
-  color: string;
+  size: number;
   cursor?: string;
+  className?: string;
 }
 
-const fontSize: number = 50;
-const color: string = "black";
+const size: number = 48;
 const cursor: string = "default";
+const className: string = " text-black dark:text-white ";
 
-const iconProps: IconProps = { fontSize, color, cursor };
+const iconProps: IconProps = { size, cursor, className };
 
 const skills: Skill[] = [
   {
@@ -132,9 +132,9 @@ function IconsSection() {
         <div className="w-24 h-20 flex items-center justify-center">
           <div
             key={id}
-            className="group border-2 relative max-size-24 border-black transition-all duration-100 size-16 hover:size-24 rounded-xl p-2 flex flex-col items-center justify-center ">
-            {skill.icon}
-            <span className=" group-hover:flex text-xs  text-center hidden font-semibold">
+            className="group border-2 relative max-size-24 border-black dark:border-white transition-all duration-100 size-16 hover:size-24 rounded-xl p-2 flex flex-col items-center justify-center ">
+            <div>{skill.icon}</div>
+            <span className=" group-hover:flex text-xs  text-center hidden font-semibold cursor-default">
               {skill.name}
             </span>
           </div>

@@ -1,7 +1,36 @@
-@import url('https://fonts.cdnfonts.com/css/microsoft-sans-serif');
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,300,501,401&f[]=melodrama@300,400,600,700,1,500&f[]=work-sans@400,600,900&display=swap');
+@import url("https://fonts.cdnfonts.com/css/microsoft-sans-serif");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,300,501,401&f[]=melodrama@300,400,600,700,1,500&f[]=work-sans@400,600,700,800,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+
+  --m-white: #f4f6ff;
+  --m-black: #020617;
+}
+
+.ul-pointer li {
+  cursor: pointer;
+}
+
+.elegantshadow {
+  color: #000000;
+  text-shadow: 2px 1px 1px #737272b2, 3px 1.5px 1px #767474af,
+    4px 2.5px 1px #787777ab, 5px 3.5px 1px #7b7a7aa9, 6px 4.5px 1px #7f7d7d9f,
+    7px 5.5px 1px #828080a2, 8px 6.5px 1px #8685859a, 9px 7.5px 1px #8a8a8a8b,
+    10px 8.5px 1px #8f8e8e8b, 11px 9.5px 1px #9391918f,
+    12px 10.5px 1px #9898988d, 13px 11.5px 1px #9d9c9c8c,
+    14px 12.5px 1px #a2a1a18b, 15px 13.5px 1px #a7a6a68a,
+    16px 14.5px 1px #acabab89, 17px 15.5px 1px #b1b0b08f,
+    18px 16.5px 1px #b6b5b58e, 19px 17.5px 1px #bab9b98d,
+    20px 18.5px 1px #bfbdbb8b, 21px 19.5px 1px #c3c2c28a,
+    22px 20.5px 1px #c8c7c78a, 23px 21.5px 1px #cdcccb88,
+    24px 22.5px 1px #d2d1d18a, 25px 23.5px 1px #d7d6d58a,
+    26px 24.5px 1px #dcdcdc8a, 27px 25.5px 1px #e2e1e18a,
+    28px 26.5px 1px #e6e5e58a, 29px 27.5px 1px #eae9e98a,
+    30px 28.5px 1px #efeeee8a, 31px 29.5px 1px #f3f2f28a,
+    32px 30.5px 1px #f7f6f68a, 33px 31.5px 1px #fbfafb8a,
+    34px 32.5px 1px #ffffff8a, 35px 33.5px 1px #ffffff8a;
+}

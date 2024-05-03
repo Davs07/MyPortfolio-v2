@@ -56,7 +56,7 @@ function Projects() {
               {project.stack.map((stack, id) => (
                 <div
                   key={id}
-                  className="w-[84px] border border-black h-8 flex items-center justify-center rounded-xl p-2 flex-col  ">
+                  className="w-[84px] border  border-black dark:border-white h-8 flex items-center justify-center rounded-xl p-2 flex-col  ">
                   <span className="text-xs">{stack}</span>
                 </div>
               ))}
