@@ -1,4 +1,3 @@
-
 function About() {
   return (
     <div className="w-full min-h-screen p-2 flex gap-12 items-center justify-center flex-col">

@@ -9,10 +9,11 @@ export default {
         satoshi: ["Satoshi", "sans-serif"],
         melodrama: ["Melodrama", "sans-serif"],
         "work-sans": ["Work Sans", "sans-serif"],
+        alpino: ["Alpino", "sans-serif"],
       },
       colors: {
-        "white": "var(--m-light)",
-        "black": "var(--m-dark)",
+        white: "var(--m-light)",
+        black: "var(--m-dark)",
       },
     },
   },

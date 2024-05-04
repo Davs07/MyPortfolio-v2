@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [theme, setTheme] = useState(() => {
-    const savedTheme = "light";
+    const savedTheme = localStorage.getItem("theme") || "light";
     if (savedTheme) {
       return savedTheme;
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -24,16 +24,24 @@ function Navbar() {
     } else {
       document.body.classList.remove("dark");
     }
-    // localStorage.setItem("theme", theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleDarkMode = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
+
+  const handleClick = () => {
+    setInterval(() => {
+      window.location.reload();
+    }, 0);
+  };
   return (
     <>
       <div className="rounded-xl border-black dark:border-white border-2 p-1 group hover:bg-black ">
-        <DIcon className="size-6 group-hover:text-white dark:text-white" />
+        <Link to={"/"}>
+          <DIcon className="size-6 group-hover:text-white dark:text-white cursor-pointer" />
+        </Link>
       </div>
       <div className="flex ">
         <ul className="flex gap-6 items-center font-satoshi font-semibold ul-pointer  ">
