@@ -3,7 +3,7 @@ import Text from "../../components/ui/Text";
 const AboutPage: React.FC = () => {
   return (
     <div className="w-full max-w-[1112px] min-h-full  flex flex-col gap-8 my-16 px-3  ">
-      <div className="flex flex-col gap-6">
+      <div className="w-full min-h-screen p-2 flex  items-center justify-center flex-col gap-8 mb-6">
         <Text size="h1" font="satoshi">
           Forjando un Camino: Pasión y Determinación
         </Text>
@@ -24,7 +24,7 @@ const AboutPage: React.FC = () => {
           tecnológicas útiles y significativas.
         </Text>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="w-full min-h-screen p-2 flex  items-center justify-center flex-col gap-8 mb-6">
         <Text size="h1" font="satoshi">
           Desarrollo Fullstack: Una Evolución Natural
         </Text>
@@ -40,7 +40,7 @@ const AboutPage: React.FC = () => {
           interes por el muno de la Inteligencia Artificial.
         </Text>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="w-full min-h-screen p-2 flex  items-center justify-center flex-col gap-8 mb-6">
         <Text size="h1" font="satoshi">
           Guiando el Rumbo: Mi Enfoque y Método de Trabajo
         </Text>
@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
           prácticas de desarrollo de software en mi Blog (link)]
         </Text>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="w-full min-h-screen p-2 flex  items-center justify-center flex-col gap-8 mb-6">
         <Text size="h1" font="satoshi">
           Descubriendo Horizontes: Educación y Crecimiento Continuo
         </Text>
@@ -88,7 +88,7 @@ const AboutPage: React.FC = () => {
           vida para obtener la mejor versión de mí mismo.
         </Text>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="w-full min-h-screen p-2 flex  items-center justify-center flex-col gap-8 mb-6">
         <Text size="h1" font="satoshi">
           Explorando el Mundo: Intereses y Pasiones
         </Text>
