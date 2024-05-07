@@ -31,11 +31,6 @@ function Navbar() {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
-  const handleClick = () => {
-    setInterval(() => {
-      window.location.reload();
-    }, 0);
-  };
   return (
     <>
       <div className="rounded-xl border-black dark:border-white border-2 p-1 group hover:bg-black ">
@@ -71,7 +66,11 @@ function Navbar() {
               onClick={toggleDarkMode}
             />
           </li>
-          |
+        </ul>
+      </div>
+
+      <div className="flex ">
+        <ul className="flex gap-6 items-center font-satoshi font-semibold ul-pointer  ">
           <li>
             <a href="https://github.com/Davs07" target="_blank">
               <GithubIcon fontSize={20} />
